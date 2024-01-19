@@ -1,0 +1,25 @@
+# https://docs.npmjs.com/misc/developers#keeping-files-out-of-your-package
+# Node modules
+node_modules/
+src/
+
+# test
+__tests__
+coverage
+
+#build tools
+.travis.yml
+.jenkins.yml
+.codeclimate.yml
+tes
+#linters
+.jscsrc
+.jshintrc
+.eslintrc*
+
+#Local env 
+.env
+
+#editor settings
+.idea
+.editorconfig

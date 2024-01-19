@@ -1,0 +1,55 @@
+{
+  "name": "@bolaxdd/medanpedia",
+  "version": "1.0.0",
+  "description": "Medan pedia adalah API open source untuk jualan",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "jest --coverage",
+    "build": "tsc",
+    "autobuild": "tsc --watch"
+  },
+  "babel": {
+    "presets": [
+      [
+        "@babel/preset-env",
+        {
+          "targets": {
+            "node": "current"
+          }
+        }
+      ],
+      "@babel/preset-typescript"
+    ]
+  },
+  "jest": {
+    "moduleFileExtensions": ["ts", "js", "mjs"],
+    "transform": {
+      "^.+\\.ts$": "ts-jest"
+    }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bolaxd/medanpedia.git"
+  },
+  "keywords": ["hmm"],
+  "author": "bolaxd",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/bolaxd/medanpedia/issues"
+  },
+  "homepage": "https://github.com/bolaxd/medanpedia#readme",
+  "files": ["dist"],
+  "devDependencies": {
+    "@babel/preset-env": "^7.23.8",
+    "@babel/preset-typescript": "^7.23.3",
+    "@jest/globals": "^29.7.0",
+    "@types/node": "^20.11.5",
+    "babel-jest": "^29.7.0",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.1.1",
+    "typescript": "^5.3.3"
+  },
+  "dependencies": {
+    "undici": "^6.3.0"
+  }
+}
